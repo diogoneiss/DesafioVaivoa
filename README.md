@@ -7,7 +7,12 @@ O projeto foi desenvolvido utilizando ASP.NET Core 5, juntamente de entity frame
 
 ## Código base
 
-Me baseei no tutorial do [Balta](https://www.youtube.com/watch?v=but7jqjopKM&t=692s&ab_channel=balta.iobalta.io), onde uma api de produtos é criada. Serão necessárias modificações no projeto, que entrarei em detalhes em breve
+Me baseei no esqueleto do [Balta.io](https://www.youtube.com/watch?v=but7jqjopKM&t=692s&ab_channel=balta.iobalta.io), onde uma api de produtos é criada. Serão necessárias modificações no projeto para atender o nosso modelo.
+
+Para começar, será necessário modificar os Models, de modo a ter o modelo de dados descrito abaixo, sem necessidade de duas estruturas diferentes.
+No controller, deveremos modificar as requisições get e post, de modo a ser passado como parâmetro apenas o email desejado, nas duas.
+
+De resto, vai do bom senso de nomenclatura modificar o template dele.
 
 ## Modelo de Dados
 Utilizaremos um banco de dados contendo diferentes entradas de Usuários, cada uma identificada por seu email e contendo a lista de cartões de crédito. DataAnnotations do Net Core são importantes para melhorar a robustez do dado.
